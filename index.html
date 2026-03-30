@@ -1,104 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>CV - Diego Contreras</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Diego Contreras</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  
 </head>
 <body>
 
-    <header>
-        <h1> Desarrollador de software</h1>
-    </header>
-    
-
-
-    <div class="cv-container">
-
-
-    <!-- Aquí colo mis datos personales -->
-    <section class="datos-personales">
-        <h3>Datos personales: </h3>
-        <ul>
-            <li>Nombre: Diego Contreras Martinez</li>
-            <li>Ingeniero en informática | Desarrollador Web y Backend</li>
-            <li>Ubicación: San Bernardo, Chile</li>
-            <li>mail: contreras.isma2021@gmail.com </li>
-            <li>Tel: +56 9 6440 9343</li>
-            <li>LinkedIn: www.linkedin.com/in/diegocontre</li>
-            <li>Portafolio: diego-contre.github.io/Portafolio</li>
+<!-- ══════════════════════════════
+     HEADER / NAVBAR
+════════════════════════════════ -->
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Diego<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cv-carousel">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="mailto:contreras.isma2021@gmail.com">Contacto</a></li>
         </ul>
-        <hr>
-    </section>
-    <!-- Aquí colo mi Perfil profesional -->
-    <section>
-        <h3>Perfil Profesional</h3>
-        <p>Ingeniero en Informática con experiencia en desarrollo web y backend utilizando Python (Django),
-        PHP (Laravel) y JavaScript. Experto en bases de datos MySQL, PostgreSQL y SQLite. Manejo de
-        control de versiones con Git, desarrollo en entornos Linux y despliegue de aplicaciones.
-        Familiarizado con metodologías ágiles, buenas prácticas de programación y análisis de datos con
-        Power BI y Pandas. Apasionado por la tecnología y el aprendizaje continuo, con orientación a la
-        eficiencia y escalabilidad en las soluciones desarrolladas.</p>
-    </section>
-    <hr>
+      </div>
+    </div>
+  </nav>
+</header>
 
-    <!-- Aquí mis habilidades tecnicas -->
-    <section>
+<!-- ══════════════════════════════
+     MAIN
+════════════════════════════════ -->
+<main>
 
-        <h3>Habilidades Técnicas</h3>
-        <ol>
-            <li><strong>lenguajes:</strong> Python, JavaScript, C#, PHP</li>
-            <li><strong>Frameworks:</strong>Django, Laravel, GlassFish</li>
-            <li><strong>Base de datos:</strong>MySQL, PostgreSQL, SQLite</li>
-            <li><strong>Herramientas: </strong> Git, Power BI, Adobe XD, Trello, Canva</li>
-            <li><strong>Análisis de Datos</strong>Power BI, Pandas</li>
-            <li><strong>Sistemas Operativos: </strong>Windows, Linux</li>
-            
-        </ol>
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7">
+          <div class="badge-role">Ingeniero en Informática</div>
+          <h1>Diego <span>Contreras</span> Martinez</h1>
+          <p class="lead">
+            Desarrollador Web y Backend con experiencia en Python, PHP y JavaScript.
+            Apasionado por la tecnología, la eficiencia y el aprendizaje continuo.
+          </p>
+          <div class="contact-pills">
+            <a href="mailto:contreras.isma2021@gmail.com">✉ contreras.isma2021@gmail.com</a>
+            <a href="tel:+56964409343">📞 +56 9 6440 9343</a>
+            <a href="https://www.linkedin.com/in/diegocontre" target="_blank">💼 LinkedIn</a>
+            <a href="https://diego-contre.github.io/Portafolio" target="_blank">🌐 Portafolio</a>
+            <span style="color:rgba(255,255,255,0.5); font-size:0.82rem; padding: 6px 14px;">📍 San Bernardo, Chile</span>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="hero-stat">
+                <div class="num">4+</div>
+                <div class="label">Años de experiencia</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="hero-stat">
+                <div class="num">4</div>
+                <div class="label">Lenguajes dominados</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="hero-stat">
+                <div class="num">3</div>
+                <div class="label">Frameworks backend</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="hero-stat">
+                <div class="num">UE5</div>
+                <div class="label">Game Development</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
-    <hr>
+  <!-- Carousel -->
+  <section id="cv-carousel">
+    <div class="container">
+      <h2 class="section-title">Mi Currículum</h2>
 
-    <!-- Aquí mis experiencia Laboral -->
+      <div id="carouselCV" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselCV" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselCV" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselCV" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#carouselCV" data-bs-slide-to="3"></button>
+        </div>
 
-    <section>
-        <h3>Experiencia laboral</h3>
+        <div class="carousel-inner pb-4">
 
-        <p><Strong>Operario de Bodega – Implementos S.A | San Bernardo | Mayo 2024 - Octubre 2024</Strong></p>
+          <!-- Slide 1: Perfil -->
+          <div class="carousel-item active">
+            <div class="cv-card">
+              <div class="card-label">01 — Perfil Profesional</div>
+              <h4>Sobre mí</h4>
+              <p>
+                Ingeniero en Informática con experiencia en desarrollo web y backend utilizando
+                Python (Django), PHP (Laravel) y JavaScript. Experto en bases de datos MySQL,
+                PostgreSQL y SQLite. Manejo de control de versiones con Git, desarrollo en
+                entornos Linux y despliegue de aplicaciones.
+              </p>
+              <p>
+                Familiarizado con metodologías ágiles, buenas prácticas de programación y análisis
+                de datos con Power BI y Pandas. Apasionado por la tecnología y el aprendizaje
+                continuo, con orientación a la eficiencia y escalabilidad en las soluciones desarrolladas.
+              </p>
+            </div>
+          </div>
 
-        <p>Descarga y carga de contenedores, etiquetado e ingreso de productos al sistema WMS.
-        Paletización, orden y mantención del área de trabajo.</p>
+          <!-- Slide 2: Habilidades -->
+          <div class="carousel-item">
+            <div class="cv-card">
+              <div class="card-label">02 — Habilidades Técnicas</div>
+              <h4>Stack tecnológico</h4>
+              <ul>
+                <li><strong>Lenguajes:</strong> Python, JavaScript, C#, PHP</li>
+                <li><strong>Frameworks:</strong> Django, Laravel, GlassFish</li>
+                <li><strong>Bases de datos:</strong> MySQL, PostgreSQL, SQLite</li>
+                <li><strong>Herramientas:</strong> Git, Power BI, Adobe XD, Trello, Canva</li>
+                <li><strong>Análisis de Datos:</strong> Power BI, Pandas</li>
+                <li><strong>Sistemas Operativos:</strong> Windows, Linux</li>
+                <li><strong>Game Dev:</strong> Unreal Engine 5, Blueprint, C++</li>
+              </ul>
+            </div>
+          </div>
 
-        <p><Strong>Junior Game Developer – Arcadius Entertainment LLC | Florida, EE.UU. | Oct 2022 - Oct 2023</Strong></p>
+          <!-- Slide 3: Experiencia -->
+          <div class="carousel-item">
+            <div class="cv-card">
+              <div class="card-label">03 — Experiencia Laboral</div>
+              <h4>Trayectoria</h4>
 
-        <p>Desarrollo de mecánicas de juego en Unreal Engine 5, programación de IA para NPC, gestión de
-        bases de datos, coordinación interdepartamental y cumplimiento de   plazos.</p>
+              <div class="mb-3">
+                <div class="job-title">Junior Game Developer — Arcadius Entertainment LLC</div>
+                <div class="job-meta">Florida, EE.UU. | Oct 2022 – Oct 2023</div>
+                <p class="mb-0">Desarrollo de mecánicas en Unreal Engine 5, programación de IA para NPC, gestión de bases de datos y coordinación interdepartamental.</p>
+              </div>
 
-        <p><Strong>Práctica Profesional – Duoc UC | San Bernardo | Abr 2022 - Jul 2022</Strong></p>
+              <div class="mb-3">
+                <div class="job-title">Práctica Profesional — Duoc UC</div>
+                <div class="job-meta">San Bernardo | Abr 2022 – Jul 2022</div>
+                <p class="mb-0">Programación en Java y PHP con NetBeans, implementación de GlassFish en Ubuntu, administración SQL y uso de Git/GitHub.</p>
+              </div>
 
-        <p>Programación en Java y PHP con NetBeans, implementación de GlassFish en servidores Ubuntu,
-        administración de bases de datos SQL y uso de Git/GitHub</p>
+              <div>
+                <div class="job-title">Operario de Bodega — Implementos S.A</div>
+                <div class="job-meta">San Bernardo | Mayo 2024 – Oct 2024</div>
+                <p class="mb-0">Descarga de contenedores, ingreso de productos al sistema WMS, paletización y mantención del área.</p>
+              </div>
+            </div>
+          </div>
 
-    </section>
-    <hr>
+          <!-- Slide 4: Formación -->
+          <div class="carousel-item">
+            <div class="cv-card">
+              <div class="card-label">04 — Formación Académica</div>
+              <h4>Educación</h4>
+              <ul>
+                <li>
+                  <strong>Ingeniería en Informática</strong><br>
+                  Instituto Profesional Duoc UC, San Bernardo<br>
+                  <span style="color:var(--verde); font-size:0.82rem;">2018 – 2022</span>
+                </li>
+                <li>
+                  <strong>Educación Escolar</strong><br>
+                  Colegio King's School, San Bernardo<br>
+                  <span style="color:var(--verde); font-size:0.82rem;">2004 – 2016</span>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-    <!-- Aquí mis formacion academica -->
-     <section>
-        <h3>FORMACIÓN ACADÉMICA</h3>
-        <p>Ingeniería en Informática – Instituto Profesional Duoc UC, San Bernardo (2018 - 2022</p>
-        Educación escolar – Colegio King’s School, San Bernardo (2004 - 2016)
-     </section>
-    
+        </div><!-- /carousel-inner -->
 
-
-
-
-
-
-
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCV" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCV" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div><!-- /carousel -->
 
     </div>
+  </section>
+
+</main>
+
+<!-- ══════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="mailto:contreras.isma2021@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/diegocontre" target="_blank">LinkedIn</a>
+      <a href="https://diego-contre.github.io/Portafolio" target="_blank">Portafolio</a>
+      <a href="tel:+56964409343">Teléfono</a>
+    </div>
+    <p>© 2026 Diego Contreras Martinez · San Bernardo, Chile</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
